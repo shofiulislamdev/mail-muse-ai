@@ -105,10 +105,21 @@ export default function App() {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
+      const responseText = await response.text();
+      let data: any;
+      try {
+        data = JSON.parse(responseText);
+      } catch {
+        const cleanMessage = responseText.replace(/<[^>]*>/g, '').trim().slice(0, 180);
+        throw new Error(
+          response.ok
+            ? 'Server returned invalid JSON response.'
+            : `Server Error (${response.status}): ${cleanMessage || response.statusText}`
+        );
+      }
 
       if (!response.ok) {
-        throw new Error(data.error || 'Failed to generate email draft.');
+        throw new Error(data.error || `Error (${response.status}): Failed to generate email draft.`);
       }
 
       const recipientStr = formData.recipientName
