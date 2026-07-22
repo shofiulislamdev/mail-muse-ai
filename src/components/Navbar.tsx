@@ -36,7 +36,7 @@ export const Navbar: React.FC<NavbarProps> = React.memo(({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-bold text-slate-900 dark:text-white text-lg tracking-tight">MailMuse AI</span>
+              <span className="font-bold text-green-500 dark:text-green-500 text-lg tracking-tight">MailMuse<span className="text-red-500">-AI</span></span>
               <span className="px-2 py-0.5 text-[10px] font-semibold bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-800/60 rounded-full">
                 Md. Shofiul Islam
               </span>
