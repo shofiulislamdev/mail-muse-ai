@@ -36,9 +36,9 @@ export const Navbar: React.FC<NavbarProps> = React.memo(({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-bold text-slate-900 dark:text-white text-lg tracking-tight">MailGenie AI</span>
+              <span className="font-bold text-slate-900 dark:text-white text-lg tracking-tight">MailMuse AI</span>
               <span className="px-2 py-0.5 text-[10px] font-semibold bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-800/60 rounded-full">
-                SaaS UI
+                Md. Shofiul Islam
               </span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">Intelligent AI Email Writer</p>
