@@ -1,0 +1,6 @@
+{
+  "name": "AI Email Writer",
+  "description": "Modern SaaS AI Email Writer interface with intuitive controls, rich preview cards, state toggles, and polished design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
